@@ -8,6 +8,7 @@
         <title>{{ $title ?? 'Free CRUD Laravel' }}</title>
         <link rel="icon" href="{{ asset('favicon.ico') }}">
 
+        @livewireStyles
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="min-h-screen bg-[#edf1f7] font-sans text-slate-800 antialiased">
@@ -42,5 +43,7 @@
                 </section>
             </div>
         </main>
+
+        @livewireScriptConfig
     </body>
 </html>
